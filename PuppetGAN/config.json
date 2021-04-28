@@ -1,0 +1,47 @@
+{
+	"comments" : "Keep here any info you may want about the current configuration :)",
+
+	"dataset" : "mnist",
+	"dataset info" : "choose between 'mnist', 'usps', 'mouth' and 'light'",
+
+	"epochs" : 301,
+	"noise std" : 0.2,
+	"bottleneck noise" : 0,
+	
+	"on roids" : true,
+	"is relativistic" : false,
+
+	"learning rates" : {
+		"real generator" : 2e-4,
+		"real discriminator" : 5e-5,
+
+		"synthetic generator" : 2e-4,
+		"synthetic discriminator" : 5e-5
+	},
+
+	"losses weights" : {
+		"reconstruction" : 10,
+		"disentanglement" : 10,
+		"cycle" : 10,
+		"attribute cycle b3" : 5,
+		"attribute cycle a" : 3
+	},
+
+	"digits" : {
+		"info" : "dataset-specific hyperparameters",
+
+		"batch size" : 200,
+		"image size" : [32, 32],
+		"save images every" : 50,
+		"save model every" : 50
+	},
+
+	"faces" : {
+		"info" : "dataset-specific hyperparameters",
+
+		"batch size" : 30,
+		"image size" : [128, 128],
+		"save images every" : 10,
+		"save model every" : 10
+	}
+}

@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__
+data/
+checkpoints/puppetGAN
+__results__
+*.pdf
+qrsh.sh
+load_modules.sh
