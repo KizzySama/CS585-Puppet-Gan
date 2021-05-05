@@ -177,7 +177,7 @@ As shown, the background and some of the action are perserved nicely, while some
 
 ![4](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/4.gif)
 
-![5](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/5.gif)
+![5](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/15.gif)
 
 ![6](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/11.gif)
 
