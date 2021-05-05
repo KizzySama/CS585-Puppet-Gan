@@ -138,6 +138,7 @@ Test 2:
 ---
 ## Results
 
+With the limited set of real image, we found this parameter to produce the best result. Although the background is not precisely preserved, this parameter retains actions of the figure fairly well. 
 
 **Learning rate**:
 - "real generator" : 2e-4,
@@ -156,7 +157,9 @@ Test 2:
 ![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
 
 
-Here is our final result:
+
+With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images. As shown, the background and some of the action are perserved nicely, while some actions are not as detailed as the result from the smaller data set. 
+
 
 **Learning rate**:
 - "real generator" : 2e-4,
