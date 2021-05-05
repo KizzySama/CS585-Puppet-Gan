@@ -158,8 +158,7 @@ With the limited set of real image, we found this parameter to produce the best 
 
 
 
-With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images. As shown, the background and some of the action are perserved nicely, while some actions are not as precise as the result from the smaller data set. 
-
+With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images. 
 
 **Learning rate**:
 - "real generator" : 2e-4,
@@ -173,6 +172,8 @@ With the secceessful production of smaller real image, we apply the same paramet
 - "cycle" : 10,
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
+
+As shown, the background and some of the action are perserved nicely, while some actions are not as precise as the result from the smaller data set. Some gestures are not retained well enough probably because the people is relatively small in real scene and as the result gestures gets smaller some information get lost.
 
 ![4](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/4.gif)
 
