@@ -44,6 +44,8 @@ We change the set of following parameters to fine-tune the model and found out w
 - loss weights: reconstruction, disentanglement, cycle,attribute cycle b3, attribute cycle a
 
 We first explore the losses weight with default learning rate. 
+
+
 Test 1:
 
 
@@ -60,6 +62,7 @@ Test 3:
 
 
 With the discovered best losses weight, we then tested different learning rate.
+
 Test 1:
 - Learning rate:
 "real generator" : 2e-4,
