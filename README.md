@@ -43,8 +43,24 @@ We change the set of following parameters to fine-tune the model and found out w
 - learning rate
 - loss weights: reconstruction, disentanglement, cycle,attribute cycle b3, attribute cycle a
 
+We first explore the losses weight with default learning rate. 
+Test 1:
 
 
+Test 2:
+
+
+Test 3:
+
+
+
+
+
+
+
+
+With the discovered best losses weight, we then tested different learning rate.
+Test 1:
 - Learning rate:
 "real generator" : 2e-4,
 "real discriminator" : 5e-6,
@@ -60,6 +76,7 @@ We change the set of following parameters to fine-tune the model and found out w
 
 ![changed_learning_rate1](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r1.png "Changed leahring rate1")
 
+Test 2:
 - Learning rate:
 "real generator" : 1e-4,
 "real discriminator" : 2.5e-5,
