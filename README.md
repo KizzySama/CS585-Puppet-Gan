@@ -1,5 +1,6 @@
 # CS585-Puppet-Gan
 CS585 course project - puppet gan
+
 Group member: Deyan Hao, Kaijun Wang, Yirong Zhang
 
 ---
@@ -45,6 +46,7 @@ We change the set of following parameters to fine-tune the model and found out w
 - loss weights: reconstruction, disentanglement, cycle,attribute cycle b3, attribute cycle a
 
 The default parameters from the model are:
+
 **Learning rate**:
 - "real generator" : 2e-4,
 - "real discriminator" : 5e-5,
@@ -56,7 +58,8 @@ The default parameters from the model are:
 - "disentanglement" : 10,
 - "cycle" : 10,
 - "attribute cycle b3" : 5,
-- “attribute cycle a" : 3
+- “attribute cycle a" : 
+
 we get the result:
 ![default](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/default.png)
 
