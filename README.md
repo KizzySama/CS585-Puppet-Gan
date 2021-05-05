@@ -174,11 +174,11 @@ With the secceessful production of smaller real image, we apply the same paramet
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
 
-![4] (https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/4.gif)
+![4](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/4.gif)
 
-![5] (https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/5.gif)
+![5](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/5.gif)
 
-![6] (https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/11.gif)
+![6](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/11.gif)
 
 ---
 ## Evaluation
