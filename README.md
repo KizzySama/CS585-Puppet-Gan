@@ -173,7 +173,7 @@ With the secceessful production of smaller real image, we apply the same paramet
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
 
-As shown, the background and some of the action are perserved nicely, while some actions are not as precise as the result from the smaller data set. Some gestures are not retained well enough probably because the people is relatively small in real scene and as the result gestures gets smaller some information get lost.
+As shown, the background and some of the action are perserved nicely, while some actions are not as precise as the result from the smaller data set. Some actions are not retained well enough probably because the people is relatively small in real scene and as the result actions get smaller some information get lost.
 
 ![4](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/4.gif)
 
