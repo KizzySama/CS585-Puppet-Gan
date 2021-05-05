@@ -134,7 +134,10 @@ Test 2:
 
 ![changed_learning_rate2](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r2.png "Changed leahring rate2")
 
-Test 3:
+
+---
+## Results
+
 
 **Learning rate**:
 - "real generator" : 2e-4,
@@ -152,8 +155,7 @@ Test 3:
 
 ![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
 
----
-## Results
+
 Here is our final result:
 
 **Learning rate**:
