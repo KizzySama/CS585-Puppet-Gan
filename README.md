@@ -78,6 +78,7 @@ We change the set of following parameters to fine-tune the model and found out w
 
 ---
 ## Results
+Here is our best result:
 
 - Learning rate:
 "real generator" : 2e-4,
@@ -85,12 +86,13 @@ We change the set of following parameters to fine-tune the model and found out w
 "synthetic generator" : 2e-4,
 "synthetic discriminator" : 3.5e-5
 
-- Losses Weight:   
+- Losses Weight:
 "reconstruction" : 40,
 "disentanglement" : 20,
 "cycle" : 10,
 "attribute cycle b3" : 5,
 “attribute cycle a" : 3
+
 
 ![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
 
