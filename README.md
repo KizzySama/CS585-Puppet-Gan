@@ -43,10 +43,63 @@ We change the set of following parameters to fine-tune the model and found out w
 - learning rate
 - loss weights: reconstruction, disentanglement, cycle,attribute cycle b3, attribute cycle a
 
-![changed_learning_rate](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r1.png "Changed leahring rate")
+
+
+- Learning rate:
+"real generator" : 2e-4,
+"real discriminator" : 5e-6,
+"synthetic generator" : 2e-4,
+"synthetic discriminator" : 5e-6
+
+- Losses Weight:
+"reconstruction" : 40,
+"disentanglement" : 20,
+"cycle" : 10,
+"attribute cycle b3" : 5,
+“attribute cycle a" : 3
+
+![changed_learning_rate1](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r1.png "Changed leahring rate1")
+
+- Learning rate:
+"real generator" : 1e-4,
+"real discriminator" : 2.5e-5,
+"synthetic generator" : 1e-4,
+"synthetic discriminator" : 2.5e-6
+
+- Losses Weight:
+"reconstruction" : 40,
+"disentanglement" : 20,
+"cycle" : 10,
+"attribute cycle b3" : 5,
+“attribute cycle a" : 3
+
+![changed_learning_rate2](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r2.png "Changed leahring rate2")
+
 
 ---
 ## Results
+
+- Learning rate:
+"real generator" : 2e-4,
+"real discriminator" : 3.5e-5,
+"synthetic generator" : 2e-4,
+"synthetic discriminator" : 3.5e-5
+
+- Losses Weight:   
+"reconstruction" : 40,
+"disentanglement" : 20,
+"cycle" : 10,
+"attribute cycle b3" : 5,
+“attribute cycle a" : 3
+
+![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
+
+
+
+
+
+
+
 ---
 ## Evaluation
 
