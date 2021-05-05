@@ -134,6 +134,23 @@ Test 2:
 
 ![changed_learning_rate2](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r2.png "Changed leahring rate2")
 
+Test 3:
+
+**Learning rate**:
+- "real generator" : 2e-4,
+- "real discriminator" : 3.5e-5,
+- "synthetic generator" : 2e-4,
+- "synthetic discriminator" : 3.5e-5
+
+**Losses Weight**:
+- "reconstruction" : 40,
+- "disentanglement" : 20,
+- "cycle" : 10,
+- "attribute cycle b3" : 5,
+- “attribute cycle a" : 3
+
+
+![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
 
 ---
 ## Results
@@ -151,10 +168,6 @@ Here is our final result:
 - "cycle" : 10,
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
-
-
-![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
-
 
 
 
