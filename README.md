@@ -42,7 +42,7 @@ The loss is a weighted sum of L1-penalties for violating the following constrain
 
 ### Parameter exploring
 We change the set of following parameters to fine-tune the model and found out which set of parameters optimize results of the task.
-- learning rate
+- learning rates
 - loss weights: reconstruction, disentanglement, cycle,attribute cycle b3, attribute cycle a
 
 The default parameters from the model are:
@@ -64,84 +64,93 @@ we get the result:
 ![default](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/default.png)
 
 We first explore the losses weight with default learning rate. 
+
 Test 1:
+
 **Losses Weights**: 
 - "reconstruction" : 20,
 - "disentanglement" : 10,
 - "cycle" : 10,
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
+
 ![1](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/20%2010%2010%205%203.png)
 
 Test 2:
+
 **Losses Weights**: 
 - "reconstruction" : 20,
 - "disentanglement" : 20,
 - "cycle" : 10,
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
+
 - ![2](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/20%2020%2010%205%203.png)
 
 Test 3:
+
 **Losses Weights**: 
 - "reconstruction" : 40,
 - "disentanglement" : 20,
 - "cycle" : 10,
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
+
 ![3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/40%2020%2010%205%203.png)
 
 With the discovered best losses weight, we then tested different learning rate.
 
 Test 1:
-- Learning rate:
-"real generator" : 2e-4,
-"real discriminator" : 5e-6,
-"synthetic generator" : 2e-4,
-"synthetic discriminator" : 5e-6
 
-- Losses Weight:
-"reconstruction" : 40,
-"disentanglement" : 20,
-"cycle" : 10,
-"attribute cycle b3" : 5,
-“attribute cycle a" : 3
+**Learning rate**:
+- "real generator" : 2e-4,
+- "real discriminator" : 5e-6,
+- "synthetic generator" : 2e-4,
+- "synthetic discriminator" : 5e-6
+
+**Losses Weight**:
+- "reconstruction" : 40,
+- "disentanglement" : 20,
+- "cycle" : 10,
+- "attribute cycle b3" : 5,
+- “attribute cycle a" : 3
 
 ![changed_learning_rate1](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r1.png "Changed leahring rate1")
 
 Test 2:
-- Learning rate:
-"real generator" : 1e-4,
-"real discriminator" : 2.5e-5,
-"synthetic generator" : 1e-4,
-"synthetic discriminator" : 2.5e-6
 
-- Losses Weight:
-"reconstruction" : 40,
-"disentanglement" : 20,
-"cycle" : 10,
-"attribute cycle b3" : 5,
-“attribute cycle a" : 3
+**Learning rate**:
+- "real generator" : 1e-4,
+- "real discriminator" : 2.5e-5,
+- "synthetic generator" : 1e-4,
+- "synthetic discriminator" : 2.5e-5
+
+**Losses Weight**:
+- "reconstruction" : 40,
+- "disentanglement" : 20,
+- "cycle" : 10,
+- "attribute cycle b3" : 5,
+- “attribute cycle a" : 3
 
 ![changed_learning_rate2](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r2.png "Changed leahring rate2")
 
 
 ---
 ## Results
-Here is our best result:
+Here is our final result:
 
-- Learning rate:
-"real generator" : 2e-4,
-"real discriminator" : 3.5e-5,
-"synthetic generator" : 2e-4,
-"synthetic discriminator" : 3.5e-5
+**Learning rate**:
+- "real generator" : 2e-4,
+- "real discriminator" : 4e-5,
+- "synthetic generator" : 2e-4,
+- "synthetic discriminator" : 4e-5
 
-- Losses Weight:
-"reconstruction" : 40,
-"disentanglement" : 20,
-"cycle" : 10,
-"attribute cycle b3" : 5,
-“attribute cycle a" : 3
+**Losses Weight**:
+- "reconstruction" : 40,
+- "disentanglement" : 20,
+- "cycle" : 10,
+- "attribute cycle b3" : 5,
+- “attribute cycle a" : 3
 
 
 ![changed_learning_rate3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r3.png "Changed leahring rate3")
