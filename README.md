@@ -43,6 +43,8 @@ We change the set of following parameters to fine-tune the model and found out w
 - learning rate
 - loss weights: reconstruction, disentanglement, cycle,attribute cycle b3, attribute cycle a
 
+![changed_learning_rate](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/r1.png "Changed leahring rate")
+
 ---
 ## Results
 ---
