@@ -158,7 +158,7 @@ With the limited set of real image, we found this parameter to produce the best 
 
 
 
-With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images. 
+With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images, in another word, our training dataset gets larger.
 
 **Learning rate**:
 - "real generator" : 2e-4,
