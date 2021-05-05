@@ -52,7 +52,7 @@ The default parameters from the model are:
 - "real discriminator" : 5e-5,
 - "synthetic generator" : 2e-4,
 - "synthetic discriminator" : 5e-5
-- 
+
 **Losses Weights**: 
 - "reconstruction" : 10,
 - "disentanglement" : 10,
