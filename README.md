@@ -158,7 +158,7 @@ With the limited set of real image, we found this parameter to produce the best 
 
 
 
-With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images. As shown, the background and some of the action are perserved nicely, while some actions are not as detailed as the result from the smaller data set. 
+With the secceessful production of smaller real image, we apply the same parameter to a larger training data set, with different actions in the real images. As shown, the background and some of the action are perserved nicely, while some actions are not as precise as the result from the smaller data set. 
 
 
 **Learning rate**:
@@ -174,10 +174,9 @@ With the secceessful production of smaller real image, we apply the same paramet
 - "attribute cycle b3" : 5,
 - “attribute cycle a" : 3
 
-
-
-
-
+![4] (https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/4.gif)
+![5] (https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/5.gif)
+![5] (https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/11.gif)
 
 ---
 ## Evaluation
