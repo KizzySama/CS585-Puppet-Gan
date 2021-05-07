@@ -184,17 +184,25 @@ As shown, the background and some of the action are perserved nicely, while some
 ---
 ## Evaluation
 We use provided pose estimation script to generate 17 keypoints of posture in a image. This is implemented by tensorflow posenet. Then we selected 13 keypoints from them to simplify the posture estimation. We use a standard called Object Keypoint Similarity (OKS) to evaluate the similarity between generated pose and ground truth. The formula is shown below:
-$$OKS=exp(-\frac{d_i^2}{2s^2k_i^2})$$
+
+![oks_formula](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/oks_formula.png)
+
 - di — the euclidian distance between ground truth keypoint and predicted keypoint;
 - s — scale: the square root of the object segment area;
 - k — per-keypoint constant that controls fall off;
 
 We first calulated OKS score of all given synthetic triplet and got an average score of 0.9469. We used it as a standard to determine how good of our model is.
+
 ![oks_1](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/oks_1.png)
+
 Then we tested on model trained with only 90 real images from jump dataset. We got an average score of 0.6495 and the best score of a pair of GT and generated pose reached 0.8044.
+
 ![oks_2](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/oks_2.png)
+
 At last we tested on model trained with all 1000 real images. We only got an average OKS score of 0.4975 and best score of 0.6119.
+
 ![oks_3](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/oks_3.png)![oks_4](https://github.com/KizzySama/CS585-Puppet-Gan/blob/master/imgs/oks_4.png)
+
 |  | Average OKS | Best OKS |
 | :-----| ----: | ----: |
 | Synthetic images | 0.9469 | - |
