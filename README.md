@@ -183,6 +183,29 @@ As shown, the background and some of the action are perserved nicely, while some
 
 ---
 ## Evaluation
+We use provided pose estimation script to generate 17 keypoints of posture in a image. This is implemented by tensorflow posenet. Then we selected 13 keypoints from them to simplify the posture estimation. We use a standard called Object Keypoint Similarity (OKS) to evaluate the similarity between generated pose and ground truth. The formula is shown below:
+### $$OKS=exp(-\frac{d_i^2}{2s^2k_i^2})$$
+- di — the euclidian distance between ground truth keypoint and predicted keypoint;
+- s — scale: the square root of the object segment area;
+- k — per-keypoint constant that controls fall off;
+
+We first calulated OKS score of all given synthetic triplet and got an average score of 0.9469. We used it as a standard to determine how good of our model is.
+Then we tested on model trained with only 90 real images from jump dataset. We got an average score of 0.6495 and the best score of a pair of GT and generated pose reached 0.8044.
+At last we tested on model trained with all 1000 real images. We only got an average OKS score of 0.4975 and best score of 0.6119.
+|  | Average OKS | Best OKS |
+| :-----| ----: | ----: |
+| Synthetic images | 0.9469 | - |
+| Testset on first model | 0.6495 | 0.8044 |
+| Testset on second model | 0.4975 | 0.6119 |
+
+---
+## Conclusion
+GAN is quite sensitive to hyper parameters, even a small change makes a big difference in the final output. So we have to trained the model from the very start for every set of parameters which makes fine-tuning time-consuming and low efficient.
+
+We only used 90 real images from jump dataset and 10,000 synthetic triplets at the beginning which costed around 9 hours per model. Then we used 1000 real images from the whole dataset which costed almost 20 hours to train.
+
+Model trained with the small dataset generates images with bad reconstruction of realistic body and background but quite robust pose information. 
+Model trained with large dataset generates clear body structure and background with the same texture as real images. However, posture information is lost in some of predictions (especially  postures with a horizontal body) which leads to a low score in OKS evaluation.
 
 ---
 ## Reference
